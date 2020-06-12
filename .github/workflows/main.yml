@@ -27,4 +27,4 @@ jobs:
     - name: Setup Surge
       run: npm install --global surge
     - name: deploy
-      run: surge ./ hassanmujtaba-covid19.surge.sh --token ${{secrets.surgeToken}}
+      run: surge ./build hassanmujtaba-covid19.surge.sh --token ${{secrets.SURGETOKEN}}
